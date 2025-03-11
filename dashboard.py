@@ -131,7 +131,9 @@ def build_dashboard(feats_df, feats_db):
 
 
 if __name__ == '__main__':
+    print('Loading Database...')
     frame, db = load(loaded=False, persist=False)
-
+    print('Building Dashboard...')
     dashboard = build_dashboard(frame, db)
-    dashboard.launch()
+    print('Launching Dashboard...')
+    dashboard.launch(server_port=5000)
