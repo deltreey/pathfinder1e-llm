@@ -21,8 +21,10 @@ https://legacy.aonprd.com using `wget --mirror --convert-links --adjust-extensio
 didn't perfectly replace all the links, unfortunately.  All of that is in the `legacy.aonprd.com` directory.  There are
 a few minor edits to those files that I had to make for ingestion.  The site has a lot of typos.
 
-The scrape was then parsed into [pandas](https://pandas.pydata.org/) Dataframes using a series of Jupyter Notebooks.
-Both the Notebooks and the resulting CSVs of the DataFrames are contained in this repository.
+The scrape was then parsed into [pandas](https://pandas.pydata.org/) Dataframes using a series of
+[Jupyter Notebooks](https://jupyter.org/).  Both the Notebooks and the resulting CSVs of the DataFrames are contained in
+this repository.  For convenience, the CSV files are also uploaded to
+[Kaggle](https://www.kaggle.com/datasets/tedcoderman/pathfinder-1e-feats-and-benefits).
 
 Finally, I dumped the **Benefit** content from each feat's description into
 [ChromaDB](https://docs.trychroma.com/docs/overview/introduction) and wired it up with
